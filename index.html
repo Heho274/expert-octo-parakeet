@@ -1,0 +1,150 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portopolio - Karya kreatif.com</title>
+    <style>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #e6dfdf;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #e4dede;
+    text-decoration: none;
+}
+
+.hero {
+    background: #0f83c7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about, .services, .contact {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #d8d0d0;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portopolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#services">Portopolio</a></li>
+                    <li><a href="#contact">Blog</a></li>
+                    <li><a href="#contact">kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="C:\Users\LENOVO\Documents\Dimas,risma\gambar logo.png" width="200px" alt="">
+            <h2>Selamat datang DiPortopolio</h2>
+            <p>Karya kreatif.com</p>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Beranda </h2>
+            <p>Selamat datang di KaryaKreatif.com, portofolio.Kami seorang desainer grafis dan pengembang web dengan pengalaman lebih dari 10 tahun dalam industri kreatif.</p>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami memulai karir saya sebagai desainer grafis dan beralih ke pengembangan web setelah beberapa tahun. Kami memiliki gelar di bidang Desain Komunikasi Visual dan telah bekerja dengan berbagai klien besar dan kecil.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Portopolio</h2>
+            <p><li>Kategori Proyek     : "Desain Grafis", "Pengembangan Web", "Fotografi"</li></p>
+                <p><li>Desain Grafis   : Desain logo, brosur, dan branding</li></p>
+                <p><li>Pengembangan Web: Situs web responsif dan aplikasi web</li></p>
+                <p><li>Fotografi       : Portofolio foto-foto profesional</li></p>
+                <p><li>Galeri Proyek   : "Lihat koleksi desain logo, situs web, dan fotografi yang telah saya kerjakan."</p>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Artikel & Tutorial: "Baca artikel terbaru tentang tren desain grafis, tips pengembangan web, dan tutorial DIY.dibawah ini adalah contoh singkat dari desain grafis:</p>
+            <img src="C:\Users\LENOVO\Documents\Dimas,risma\download.jpeg"><p>Desain grafis adalah suatu bidang yang melibatkan pembuatan dan pengaturan elemen visual untuk menyampaikan pesan atau informasi. Ini mencakup penggunaan teks, gambar, warna, dan bentuk untuk menciptakan komunikasi yang efektif dan menarik. Desain grafis dapat diterapkan dalam berbagai media, termasuk cetak, digital, dan multimedia.</p>
+            <img src="C:\Users\LENOVO\Documents\Dimas,risma\SA_-_website_bisnis_sendiri-01.jpeg" width="300px"><p>Pengembangan web adalah proses pembuatan, desain, dan pemeliharaan situs web atau aplikasi web.</p>
+            <section id="kontak">
+                    <h2>kontak</h2>
+                    <form id="contact-form">
+                    <label for="name">NAMA</label>
+                    <input type="text"id name="name" required>
+                    <label for="name">EMAIL</label>
+                    <input type="text"id email="email" required>
+                    <label for="name">PESAN</label>
+                    <input type="text"id pesan="pesan" required>
+                    <button type="submit">kirim</button>
+                    </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portopolio karya kreatif.com</p>
+        </div>
+    </footer>
+    
+    <script>
+// script.js
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>
